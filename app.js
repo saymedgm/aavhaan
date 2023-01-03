@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const { connectMongoose } = require('./database/connection')
-const sportsSchema = require("./database/schema/sports");
+const Sport = require("./database/schema/sports");
 
 connectMongoose();
 

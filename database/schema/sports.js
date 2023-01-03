@@ -7,4 +7,4 @@ const sportsSchema = new mongoose.Schema({
     },
 })
 
-module.exports = sportsSchema
+exports.Sport = mongoose.model("Sport", sportsSchema) 
