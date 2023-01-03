@@ -14,10 +14,17 @@ const sportsSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    [//dtu
+        {
+
+        }
+    ], 
+    [
+        {
+
+        }
+    ]
 })
-
-
-
 
 // const Badminton = mongoose.model("Badminton", sportsSchema);
 
