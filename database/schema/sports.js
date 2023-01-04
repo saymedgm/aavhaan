@@ -1,10 +1,14 @@
 const mongoose = require("mongoose");
 
 const sportsSchema = new mongoose.Schema({
-    name: {
+    sportsName: {
         type: String,
         required: true,
     },
 })
-
 exports.Sport = mongoose.model("Sport", sportsSchema) 
+
+Sport.create({
+    sportsName: "Football", 
+    sportsName: "Cricket", 
+})

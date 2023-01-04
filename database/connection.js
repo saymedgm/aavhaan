@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
+const Sport = require("./schema/Sports.js");
 
 exports.connectMongoose = () => {
   mongoose
-    .connect("mongodb://localhost:27017/ahvan/sports", {
+    .connect("mongodb://localhost:27017/ahvan", {
       useNewUrlParser: true,
     })
     .then(() => {
