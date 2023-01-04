@@ -13,10 +13,10 @@ const captainSchema = new Schema({
         type: String,
         required: true  
     },
-    sports: [
+    sports: [{
         type: mongoose.Schema.Types.ObjectId, 
         ref: 'Sport'
-    ], 
+    }], 
     college: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'College',
@@ -24,4 +24,4 @@ const captainSchema = new Schema({
     }, 
 });
 
-export.Captain = mongoose.model('Captain', captainSchema);
+exports.Captain = mongoose.model('Captain', captainSchema);
