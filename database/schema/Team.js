@@ -1,4 +1,5 @@
 import Player from './Player.js';
+import Captain from './Captain.js';
 import College from './college.js';
 const mongoose = require('mongoose');
 
@@ -9,7 +10,7 @@ const teamSchema = new Schema({
     }
     captain: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Player',
+        ref: 'Captain',
     }, 
     players: {
         type: [
